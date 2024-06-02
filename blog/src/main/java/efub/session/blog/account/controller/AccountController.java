@@ -28,7 +28,7 @@ public class AccountController {
     /* 계정 조회 기능 (1명) */
     @GetMapping("/{accountId}")
     @ResponseStatus(value = HttpStatus.OK)
-    public AccountResponseDto getAccount(@PathVariable Long accountId) {
+    public AccountResponseDto getAccount(@PathVariable("accountId") Long accountId) {
         Account findAccount = accountService.findAccountById(accountId);
         return AccountResponseDto.from(findAccount);
     }

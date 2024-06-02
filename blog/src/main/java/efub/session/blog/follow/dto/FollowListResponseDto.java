@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 @Getter
 @Builder
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class FollowListResponseDto { /*
+public class FollowListResponseDto {
     private List<FollowListResponseDto.SingleFollower> followerList;
     private List<SingleFollowing> followingList;
     private Integer followerCount;
@@ -52,5 +52,5 @@ public class FollowListResponseDto { /*
                 .followerCount(followers.size())
                 .followingCount(followings.size())
                 .build();
-    } */
+    }
 }

@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class FollowStatusResponseDto { /*
+public class FollowStatusResponseDto {
     private Long accountId;
     private String nickname;
     private String email;
@@ -24,5 +24,5 @@ public class FollowStatusResponseDto { /*
         } else {
             this.status = "FOLLOW";
         }
-    } */
+    }
 }

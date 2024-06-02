@@ -7,9 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface FollowRepository extends JpaRepository<Follow, Long> {
-    // [?] existsByFollowerAndFollowing(Account follower, Account following);
-    // [?]<[?]> findAllByFollower(Account follower);
-    // [?]<[?]> findAllByFollowing(Account following);
-    // [?] findByFollowerAndFollowing(Account follower, Account following);
-    // [?] deleteByFollowId(Long followId);
+     Boolean existsByFollowerAndFollowing(Account follower, Account following);
+     List<Follow> findAllByFollower(Account follower);
+     List<Follow> findAllByFollowing(Account following);
+     Follow findByFollowerAndFollowing(Account follower, Account following);
+     void deleteByFollowId(Long followId);
 }

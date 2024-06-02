@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class FollowRequestDto { /*
+public class FollowRequestDto {
     private Long followingId;
 
     public FollowRequestDto(Long followingId) {
@@ -20,5 +20,5 @@ public class FollowRequestDto { /*
                 .follower(follower)
                 .following(following)
                 .build();
-    } */
+    }
 }
